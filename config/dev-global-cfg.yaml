@@ -1,0 +1,12 @@
+---
+name: Development global config Data
+description:
+  Configuration needed for development environment
+
+variables:
+  # confidential variables should be ENV VARS
+  username: "{tavern.env_vars.TEST_USERNAME}"
+  password: "{tavern.env_vars.TEST_PASSWORD}"
+  api-url: "{tavern.env_vars.API_URL}"
+
+

@@ -1,0 +1,20 @@
+---
+
+name: Authentication stage
+description:
+  Reusable test stage for authentication
+
+stages:
+  - id: login_get_token
+    name: Login and acquire token
+    request:
+      url: "{api-url:s}/auth/login/"
+      json:
+        username: "{username:s}"
+        password: "{password:s}"
+      method: POST
+    response:
+      status_code: 200
+      save:
+        json:
+          test_token: key
