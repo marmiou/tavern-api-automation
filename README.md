@@ -24,16 +24,16 @@ git clone git@github.com:marmiou/tavern-api-automation.git
  PYTHONPATH=$PYTHONPATH:$TAVERN_API_CONFIG:$TAVERN_API_TESTS
  ```
 ### Installing
+Install required packages:
+```
+pipenv install
+```
 
 To activate this project's virtualenv, run:
 ```
-workon tavern-api
+pipenv shell
 ```
 
-Install required packages:
-```
-pip install -r requirements.txt
-```
 
 ## Running the tests
 
@@ -71,11 +71,10 @@ allure serve {framework-dir}/report-allure;
 
 * [Tavern](https://tavern.readthedocs.io/en/latest/)
 * [Pytest](https://docs.pytest.org/en/stable/)
-* [Virtualenv](https://virtualenv.pypa.io/en/latest/)
-* [Virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
+* [Pipenv](https://pypi.org/project/pipenv/)
 * [Allure](http://allure.qatools.ru/)
 * [Colorlog](https://pydigger.com/pypi/colorlog)
-
+* [Sure](https://sure.readthedocs.io/en/latest/)
 ## Contributing
 
 Please read [CONTRIBUTING.md](add a link here)

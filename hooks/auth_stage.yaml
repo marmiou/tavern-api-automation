@@ -8,11 +8,11 @@ stages:
   - id: login_get_token
     name: Login and acquire token
     request:
-      url: "{api-url:s}/auth/login/"
-      json:
-        username: "{username:s}"
+      url: "{host:s}/api/login/"
+      params:
+        email: "{email:s}"
         password: "{password:s}"
-      method: POST
+      method: GET
     response:
       status_code: 200
       save:

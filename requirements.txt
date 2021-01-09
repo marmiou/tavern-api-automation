@@ -1,7 +1,0 @@
-python-dotenv==0.14.0
-pytest==6.0.1
-tavern==1.6.0
-colorlog==4.2.1
-pytest-instafail==0.4.2
-allure-pytest==2.8.18
-allure-python-commons==2.8.18

@@ -1,0 +1,19 @@
+test_name: TEST-List users
+includes:
+  - !include ../hooks/auth_stage.yaml
+
+stages:
+  - type: ref
+    id: login_get_token
+  - name: stage - list users
+    request:
+      url: "{host}/api/users"
+      params:
+        page: "2"
+      method: GET
+      headers:
+        content-type: application/json
+        Authorization: "{test_token}"
+    response:
+      status_code: 200
+

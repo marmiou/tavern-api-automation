@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+pytest = "*"
+python-dotenv = "*"
+tavern = "*"
+colorlog = "*"
+pytest-instafail = "*"
+allure-pytest = "*"
+allure-python-commons = "*"
+sure = "*"
+
+[requires]
+python_version = "3.8"
